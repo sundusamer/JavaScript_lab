@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        header{
+    background-color: dimgrey;
+    padding:5px 5px 5px;
+    position: sticky;
+}
+a:hover{
+    font-size: 20px;
+    color:brown;
+    text-decoration: underline;
+}
+
+header a{
+    float: right;
+    color: white;
+    font-size: 17px;
+}
+i:hover{
+    cursor: pointer;
+}
+.head{
+    padding:  10px;
+}
+.sub:hover{
+    font-size: 40px;
+}
+
+
+footer{
+    background-color: rgba(111, 105, 105,0.8);
+    text-align: center;
+    
+}
+a:active{
+    color: white;
+    background-color: blueviolet;
+}
+.sub:hover{
+    cursor: pointer;
+   font-size: 21px;
+}
+
+
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <meta charset="UTF-8">
+    
+    <title>Sign Up</title>
+    <script src="signup.js"></script>
+</head>
+<body style="background-color: burlywood;">
+    <div class="head">
+        <header>
+   
+ <h1 style="color:rgb(244, 243, 245)">Elearning System &#129504
+ 
+
+ <a href="main.html">Return to the main page</a>
+
+
+
+</h1>
+
+ 
+ </header>
+ </div>
+    <hr>
+    <form action="courses.html">
+        <fieldset>
+            <legend style="font-family: Georgia, 'Times New Roman', Times, serif; font-weight: bold;">Sign Up Form</legend>
+            <label for="fn">First Name :</label>
+            <div>
+                <input type="text" placeholder="Sondos" id="fn" name="first name" required>
+            </div>
+            <label for="ln">Last Name :</label>
+            <div>
+                <input type="text" placeholder="Abed" name="last name" id="ln" required>
+            </div>
+            <label for="ph">Phone Number :</label>
+            <div>
+                <input type="tel" placeholder="123-456-789" name="phone" id="ph" pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}"title="please enter valid phone number" required>
+            </div>
+            <label for="mail">email :</label>
+            <div>
+            <input type="email" name="mail" placeholder="h56753@gmail.com" id="mail" required>
+            </div>
+           <label for="pass">Password :</label>
+           <div>
+            <input type="password" id="pass" name="password" required>
+           </div>
+            
+        </fieldset>
+        <fieldset>
+            <legend>Gender</legend>
+            <div>
+                <input type="radio" name="gender" value="f" id="f" required>
+                <label for="f">Female</label>
+            </div>
+            <div>
+                <input type="radio" name="gender" value="m" id="m" required>
+                <label for="m">Male</label>
+            </div>
+            <div>
+                <input type="radio" name="gender" value="o" id="o" required>
+                <label for="o">Other</label>
+            </div>
+        </fieldset>
+        <label for="r">Your role :</label>
+        <select name="role" id="r" required>
+            <option value="student">Student</option>
+            <option value="teacher">Teacher</option>
+            <option value="employee">Employee</option>
+            <option value="manager">Manager</option>
+
+        </select>
+        <br>
+        <br>
+        <label for="l">Linkedin Profile</label>
+        <input id="l"type="url" name="linkedin" placeholder="https://example.com"  pattern="https://.*">
+        <br>
+        <br>
+        <label for="c">Enter the number of cources you are intersted in</label>
+        <input type="number" name="courses" id="c" required min="1" max="4" value="1">
+        <br>
+        <br>
+        <label for="d">Birth Date </label>
+        <input type="date" id="d"   name="birth" required>
+        <br>
+        <input type="submit" class="sub"> </input>
+      
+    </form>
+    <footer>
+
+        <i class="fa fa-copyright" style="color: rgb(245, 241, 241); font-size: 30px;">to author</i>
+       
+        
+        <br>
+        <br>
+        <br>
+       
+        <div id="i">
+       
+        <i class="fa fa-facebook"></i>
+       
+        <i class="fa fa-github" ></i>
+       
+        <i class="fa fa-linkedin" ></i>
+       
+        <i class="fa fa-twitter"></i>
+       
+        </div>
+       </footer>
+       <h1>hello</h1>
+    
+</body>
+</html>
